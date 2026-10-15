@@ -40,7 +40,6 @@ export default function Home() {
     { id: "dessert", name: "Desserts", icon: <IceCream size={22} /> },
   ];
 
-  // Saare food images - verified working Unsplash URLs (pakka chalengi)
   const menuItems: any = {
     desi: [
       { name: "Chicken Biryani", price: "Rs. 350", desc: "Aromatic basmati rice with tender chicken", img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" },
@@ -84,7 +83,6 @@ export default function Home() {
     ],
   };
 
-  // Emoji fallback - agar koi image load nahi ho to yeh dikhega
   const emojiFallback: any = {
     "Chicken Biryani": "🍛",
     "Mutton Karahi": "🍲",
@@ -779,8 +777,18 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ===== FOOTER BOTTOM WITH PORTFOLIO LINK ===== */}
         <div className="border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
-          © 2026 Fork &amp; Flame Cafe. All rights reserved. | Made by TechBuddies ❤️
+          © 2026 Fork &amp; Flame Cafe. All rights reserved. | Made by{" "}
+          <a
+            href="https://portfolio-self-nine-93.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-400 hover:text-red-300 font-semibold transition"
+          >
+            Tech Buddies
+          </a>{" "}
+          ❤️
         </div>
       </footer>
 
